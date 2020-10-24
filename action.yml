@@ -1,0 +1,17 @@
+name: 'azure-ftp-delete-action@v1'
+author: 'Patrick Lamber <pla@expertsinside.com>'
+description: 'Deletes all files over FTP in an Azure Website using a publishing profile'
+inputs:
+  profile:
+    description: 'Publishing profile'
+    required: true
+  workingDir:
+    description: 'Working directory'
+    required: false
+    default: '/site/wwwroot'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  color: 'orange'
+  icon: 'delete'
