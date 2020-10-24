@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 echo "Processing..."
-$INPUT_PROFILE > input.xml
+echo "$INPUT_PROFILE" > input.xml
 ftpURL=$(xmllint --xpath 'string((//publishData/publishProfile[@publishMethod = "FTP"])[1]/@publishUrl)' input.xml)
 userName=$(xmllint --xpath 'string((//publishData/publishProfile[@publishMethod = "FTP"])[1]/@userName)' input.xml)
 userPWD=$(xmllint --xpath 'string((//publishData/publishProfile[@publishMethod = "FTP"])[1]/@userPWD)' input.xml)
