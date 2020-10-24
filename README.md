@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Removes the files from the Azure Webapp
-      uses: plamber/azure-ftp-delete-action-v1@releases/v1.0
+      uses: plamber/azure-ftp-delete-action@v1
       with:
         profile: ${{ secrets.AZUREPUBLISHINGPROFILE }}
 
