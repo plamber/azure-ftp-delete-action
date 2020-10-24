@@ -1,4 +1,4 @@
-# azure-ftp-delete-action-v1
+# azure-ftp-delete-action
 Azure Action to delete files from an Azure Website using the FTP command and a publishing profile
 
 ## Example usage
